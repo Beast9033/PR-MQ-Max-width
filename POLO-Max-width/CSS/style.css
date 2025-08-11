@@ -1,0 +1,411 @@
+:root{
+    --theme-textblack:#000;
+} 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: var(--theme-textblack);
+    line-height: 1.6;
+    background: #ffffff;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.align-item-center{
+    align-items: center;
+}
+/* Header */
+.site-header {
+    background: #f0efef;
+    color: var(--theme-textblack);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.site-header .logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.main-nav{
+    float: right; 
+    text-align: center;
+}
+
+.main-nav a{
+    color: var(--theme-textblack);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.main-nav button{
+    border: none;
+    margin-left: 1.5rem;
+}
+
+/* Hero Section */
+.hero{
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: var(--theme-textblack);
+}
+
+.hero-content h2 {
+    font-size: 120px;
+    font-weight: 800;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+   font-size: 1.2rem;
+   margin-bottom: 1.5rem;
+}
+
+.button-1{
+    background: #000000;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.button-2{
+    background: #fff;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    border: 1px solid #d5d5d5;
+}
+
+.section {
+    padding: 4rem 0;
+    background: #ffffff;
+    margin-top: 2rem;
+    border-radius: 8px;
+}
+
+.services h2,
+.about h2,
+.contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service-item {
+    background: #ffffff;
+    padding: 2rem;
+    flex: 1 1 280px;
+    text-align: center;
+}
+
+.service-item h3 {
+    margin-bottom: 1rem;
+}
+
+ /* Portfol section */
+
+.portfolio {
+    background: #f8f8f8;
+    padding: 40px 0;
+}
+
+.portfolio .filter {
+    justify-content: center;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.portfolio .filter a{
+    display: inline-block;
+    margin: 0 8px;
+    padding: 6px 12px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.portfolio .filter a.active, .portfolio .filter a:hover{
+    text-decoration: underline;
+}
+
+.portfolio .grid{
+    text-align: center;
+}
+
+.portfolio .item{
+    display: inline-block;
+    width: 33.33%;
+    margin: 1rem;
+    vertical-align: top;
+}
+
+
+.portfolio .item img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio .item .caption{
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+/* About */
+
+.about{
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about a h6{
+     font-size: 22px;
+    color: #000;
+}
+
+.about .know-more {
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+.about p {
+    width: 60%;
+    margin: 0 auto 20px;
+    font-size: 15px;
+    color: #666;
+}
+
+/* Progress */
+
+.progress-section{
+    background: #f0f0f0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.progress-section h3{
+    margin-bottom: 15px;
+}
+
+.progress{
+    width: 60%;
+    margin: 10px auto;
+}
+
+.progress .label{
+    float: left;
+    width: 20%;
+    text-align: left;
+}
+
+.progress .bar{
+    float: left;
+    width: 75%;
+    background: #ccc;
+    position: relative;
+    height: 10px;
+    margin-bottom: 5px;
+}
+
+.progress .bar .value{
+    display: block;
+    background: #1301d8;
+    height: 100%;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* services */
+
+.services{
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.services h3{
+    margin-bottom: 20px;
+}
+
+.service{
+    display: inline-block;
+    width: 30%;
+    margin: 1.66%;
+    vertical-align: top;
+}
+
+.service h3{
+    margin: 10px 0;
+}
+
+.service p{
+    font-size: 14px;
+    color: #555;
+}
+
+/* blog */
+
+.blog{
+    background: #f8f8f8;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.blog .post{
+    display: inline-block;
+    width: 10%;
+    margin: 1%;
+    vertical-align: top;
+}
+
+.blog img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog .post p{
+    display: inline;
+    font-size: 14px;
+    color: #333;
+
+}
+
+/*contact info */
+
+.contact-info{
+    width: 40%;
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+    float: left;
+}
+
+.contact-info h2{
+    margin-bottom: 20px;
+}
+
+.contact-info p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-block{
+    display: block;
+    width: 45%;
+    margin: 2%;
+    margin-left: 120px;
+    text-align: left;
+}
+
+.contact-block p{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.contact-block p strong{
+    display: block;
+    width: 100px;
+}
+    
+/* contact form*/
+.contact-form{
+    background: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-form form p{
+    width: 65%;
+    margin-left: 10px;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.contact-form textarea{
+    height: 80px;
+    resize: vertical;
+}
+
+.contact-form .submit-btn{
+    display: inline-block;
+    background: #ffffff;
+    color: #000000;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 1px solid  #000;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 100px;
+}
+
+
+footer{
+    background: #f0efef;
+    color: #000000;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}

@@ -1,0 +1,88 @@
+/* xxl */
+@media (max-width:1399px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* xl */
+@media (max-width:1199px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* lg */
+@media (max-width:991px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .service {
+    width: 48%;
+    margin: 1%;
+  }
+
+  .portfolio .item {
+    width: 48%;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* md */
+@media (max-width:767px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .service,
+  .portfolio .item {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  .about p,
+  .progress {
+    width: 100%;
+  }
+}
+
+/* sm */
+@media (max-width:575px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .main-nav {
+    float: none;
+    text-align: center;
+  }
+
+  .main-nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* xs */
+@media (max-width:480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .button-1,
+  .button-2 {
+    display: block;
+    margin: 10px auto;
+  }
+}
